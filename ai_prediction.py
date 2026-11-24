@@ -1,26 +1,34 @@
-import random
-import time
+def predict_risk(distance, humidity, wind_speed):
 
-def detect_lightning():
-    print("\n===== VAJRAWATCH =====")
-    print("AI Lightning Safety System")
-    print("-------------------------")
-
-    distance = random.randint(1, 20)
-
-    print("Simulated lightning distance:", distance, "km")
+    risk_score = 0
 
     if distance <= 5:
-        print("WARNING: EXTREME LIGHTNING RISK!")
-        print("Farmer Alert: MOVE TO SAFE SHELTER!")
+        risk_score += 50
     elif distance <= 10:
-        print("WARNING: HIGH LIGHTNING RISK!")
-        print("Avoid open fields immediately.")
+        risk_score += 30
     else:
-        print("LOW RISK: Continue monitoring.")
+        risk_score += 10
 
-    print("-------------------------")
+    if humidity >= 80:
+        risk_score += 25
+    elif humidity >= 60:
+        risk_score += 15
 
-while True:
-    detect_lightning()
-    time.sleep(5)
+    if wind_speed >= 30:
+        risk_score += 25
+    elif wind_speed >= 15:
+        risk_score += 10
+
+    print("\n===== AI RISK PREDICTION =====")
+    print("Risk Score:", risk_score, "/ 100")
+
+    if risk_score >= 70:
+        risk_level = "HIGH"
+    elif risk_score >= 40:
+        risk_level = "MODERATE"
+    else:
+        risk_level = "LOW"
+
+    print("Risk Level:", risk_level)
+
+    return risk_level
