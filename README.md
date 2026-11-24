@@ -3,7 +3,7 @@
 Farmers working in open agricultural fields are at risk during thunderstorms and lightning events
 
 ## Proposed Solution
-VajraWatch is a smart wearable safety system designed to detect potential lightning threats and alert farmers 
+VajraWatch is a smart wearable safety watch designed to detect potential lightning threats and alert farmers 
 through immediate warnings.
 
 ## Key Features
