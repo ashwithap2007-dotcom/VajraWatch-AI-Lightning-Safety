@@ -1,13 +1,13 @@
-# VajraWatch-AI Lightening Detection & Farmer Safety
+# VajraWatch-AI Lightning Detection & Farmer Safety
 ## Problem Statement
-Farmers working in open agricultural fields are at risk during thunderstorms and lightening events
+Farmers working in open agricultural fields are at risk during thunderstorms and lightning events
 
 ## Proposed Solution
-VajraWatch is a smart wearable safety system designed to detect potential lightening threats and alert farmers 
+VajraWatch is a smart wearable safety system designed to detect potential lightning threats and alert farmers 
 through immediate warnings.
 
 ## Key Features
-- Lightening activity monitoring
+- Lightning activity monitoring
 - Early warning alerts
 - Farmer safety notifications
 - AI-based risk assessment (planned)
